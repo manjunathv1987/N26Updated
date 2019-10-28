@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>N26_SurveyEmail</members>
+        <members>ProductDetialsonCaseController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Contact</members>
+        <members>Rate_Card__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>unfiled$public/N26_Survey_Email</members>
+        <name>EmailTemplate</name>
+    </types>
+    <version>43.0</version>
+</Package>

@@ -1,0 +1,34 @@
+<aura:component controller="ProductDetialsonCaseController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride,force:hasSObjectName" access="global" >
+     
+    <aura:attribute name="recordId" type="String" />
+    
+    <aura:attribute type="Rate_Card__c[]" name="rcList"/> 
+    <aura:attribute name="mycolumns" type="List"/>
+        
+    <aura:attribute type="Rate_Card__c[]" name="ATMrcList"/> 
+    <aura:attribute name="mycolumnsATM" type="List"/>
+    
+    <aura:attribute type="Rate_Card__c[]" name="CRCrcList"/> 
+    <aura:attribute name="mycolumnsCRC" type="List"/>
+     
+    <aura:handler name="init" value="{!this}" action="{!c.fetchRateCard}"/>
+    <!--<aura:handler name="init" value="{!this}" action="{!c.fetchATMRateCard}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.fetchrateCardCRC}"/>-->
+     
+    <lightning:datatable data="{! v.rcList}"
+                         columns="{! v.mycolumns}"
+	                         keyField="id"
+                         hideCheckboxColumn="true"/>
+    
+    <lightning:datatable data="{! v.ATMrcList}"
+                         columns="{! v.mycolumnsATM}"
+	                         keyField="id"
+                         hideCheckboxColumn="true"/>
+    
+    <lightning:datatable data="{! v.CRCrcList}"
+                         columns="{! v.mycolumnsCRC}"
+	                         keyField="id"
+                         hideCheckboxColumn="true"/>
+     
+
+</aura:component>
